@@ -134,7 +134,7 @@ export default function AboutOverview() {
               />
             </div>
             <div className="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed">
-              {language === "kn" ? "ಸಕ್ರಿಯ ಸ್ವಯಂಸೇವಕ ಕಾರ್ಯಕರ್ತರು" : "Volunteer team members"}
+              {language === "kn" ? "ಸಕ್ರಿಯ ಸದಸ್ಯರು & ಕಾರ್ಯಕರ್ತರು" : "Registered active members"}
             </div>
           </div>
 

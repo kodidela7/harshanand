@@ -190,15 +190,15 @@ export default function VisionPage() {
               </h4>
               <p className="text-xs sm:text-sm text-slate-300 max-w-lg">
                 {language === "kn"
-                  ? "ನಿಮ್ಮ ಸಲಹೆಗಳು, ಕಲ್ಪನೆಗಳು ಮತ್ತು ಸಮುದಾಯ ಸಹಭಾಗಿತ್ವದೊಂದಿಗೆ ನವ ಕರ್ನಾಟಕವನ್ನು ಜೊತೆಯಾಗಿ ಕಟ್ಟೋಣ."
-                  : "Share your civic proposals, volunteer in village initiatives, or collaborate with our think tank."}
+                  ? "ನಿಮ್ಮ ಸಲಹೆಗಳು, ಕಲ್ಪನೆಗಳು ಮತ್ತು ಅಧಿಕೃತ ಸದಸ್ಯತ್ವದೊಂದಿಗೆ ನವ ಆಳಂದ ಹಾಗೂ ಕಲಬುರಗಿಯನ್ನು ಜೊತೆಯಾಗಿ ಕಟ್ಟೋಣ."
+                  : "Register for official citizen membership, share your proposals, and collaborate with our grassroots team."}
               </p>
             </div>
             <Link
-              href="/contact"
+              href="/membership"
               className="px-7 py-3.5 rounded-full bg-[#b91c1c] hover:bg-[#991b1b] text-white font-extrabold text-xs sm:text-sm shadow-md transition-all shrink-0 inline-flex items-center gap-2"
             >
-              <span>{language === "kn" ? "ಸಲಹೆ ಹಂಚಿಕೊಳ್ಳಿ" : "Share Your Ideas"}</span>
+              <span>{language === "kn" ? "ಸದಸ್ಯತ್ವ ನೋಂದಣಿ" : "Register Membership"}</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

@@ -16,9 +16,25 @@ export default function Footer() {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
 
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (email.trim()) {
+      try {
+        await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: "Newsletter Subscriber",
+            email: email.trim(),
+            phone: "0000000000",
+            location: "Website Footer",
+            message: "Citizen subscribed to constituency newsletter updates.",
+            source: "newsletter",
+          }),
+        });
+      } catch (err) {
+        console.error("Newsletter submission error:", err);
+      }
       setSubscribed(true);
       setTimeout(() => setSubscribed(false), 4000);
       setEmail("");
@@ -88,12 +104,12 @@ export default function Footer() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
 
-              {/* Button 2: Become a Volunteer (Clean Border Button) */}
+              {/* Button 2: Membership Registration */}
               <Link
-                href="#volunteer"
+                href="/membership"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-slate-300 hover:border-slate-800 text-slate-800 hover:bg-slate-50 font-semibold text-xs sm:text-sm transition-all duration-200 cursor-pointer"
               >
-                <span>{t("ಸ್ವಯಂಸೇವಕರಾಗಿ", "Become a Volunteer")}</span>
+                <span>{t("ಸದಸ್ಯತ್ವ ನೋಂದಣಿ", "Membership Registration")}</span>
               </Link>
             </div>
 

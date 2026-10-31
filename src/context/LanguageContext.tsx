@@ -26,12 +26,23 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    localStorage.setItem("preferred_lang", lang);
+    try {
+      localStorage.setItem("preferred_lang", lang);
+    } catch (e) {
+      console.warn("Could not save language to localStorage:", e);
+    }
   };
 
   const toggleLanguage = () => {
-    const nextLang = language === "kn" ? "en" : "kn";
-    setLanguage(nextLang);
+    setLanguageState((prev) => {
+      const nextLang = prev === "kn" ? "en" : "kn";
+      try {
+        localStorage.setItem("preferred_lang", nextLang);
+      } catch (e) {
+        console.warn("Could not save language to localStorage:", e);
+      }
+      return nextLang;
+    });
   };
 
   const t = (knText: string, enText: string) => {

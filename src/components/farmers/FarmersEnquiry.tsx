@@ -15,12 +15,26 @@ export default function FarmersEnquiry() {
     interest: "GI Tur Dal Export Hub",
     notes: "",
   });
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (formData.name && formData.contact) {
+    if (!formData.name || !formData.contact) return;
+    setSubmitting(true);
+
+    try {
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          phone: formData.contact,
+          location: `${formData.farmName ? formData.farmName + ", " : ""}${formData.taluk}`,
+          message: `[Farmer Inquiry] Interest: ${formData.interest}. Notes: ${formData.notes || "None"}`,
+          source: "farmers_page",
+        }),
+      });
       setSubmitted(true);
-      setTimeout(() => setSubmitted(false), 5000);
       setFormData({
         name: "",
         farmName: "",
@@ -29,6 +43,10 @@ export default function FarmersEnquiry() {
         interest: "GI Tur Dal Export Hub",
         notes: "",
       });
+    } catch (err) {
+      console.error("Error submitting farmer inquiry:", err);
+    } finally {
+      setSubmitting(false);
     }
   };
 

@@ -212,13 +212,13 @@ export default function AboutPillars() {
 
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                 {language === "kn"
-                  ? "ಸಮಸ್ಯೆಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ಅಥವಾ ಆಂದೋಲನದಲ್ಲಿ ಸ್ವಯಂಸೇವಕರಾಗಿ ಕೈಜೋಡಿಸಲು ನಮ್ಮ ಕಚೇರಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ."
-                  : "Reach out directly to report public grievances or join as a volunteer in our people-first movement."}
+                  ? "ಸಮಸ್ಯೆಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ಅಥವಾ ಆಂದೋಲನದಲ್ಲಿ ಅಧಿಕೃತ ಸದಸ್ಯರಾಗಿ ಕೈಜೋಡಿಸಲು ನಮ್ಮೊಂದಿಗೆ ನೋಂದಾಯಿಸಿ."
+                  : "Reach out directly to report grievances or register for official citizen membership."}
               </p>
 
               {/* Action Buttons */}
               <Link
-                href="/#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-bold text-xs sm:text-sm shadow-lg shadow-red-950/40 transition-all"
               >
                 <PhoneCall className="w-4 h-4" />
@@ -226,10 +226,10 @@ export default function AboutPillars() {
               </Link>
 
               <Link
-                href="/#contact"
-                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-xs sm:text-sm border border-white/20 transition-all"
+                href="/membership"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs sm:text-sm shadow-md transition-all"
               >
-                <span>{language === "kn" ? "ಸ್ವಯಂಸೇವಕರಾಗಿ" : "Become a Volunteer"}</span>
+                <span>{language === "kn" ? "ಸದಸ್ಯತ್ವ ನೋಂದಣಿ" : "Register Membership"}</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>

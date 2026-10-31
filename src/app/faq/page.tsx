@@ -67,10 +67,10 @@ export default function FAQPage() {
     {
       id: "q5",
       category: "citizen",
-      qKn: "ಶ್ರೀ ಹರ್ಷಾನಂದ ಗುತ್ತೇದಾರ ಅವರ ಜನಸೇವಾ ಆಂದೋಲನದಲ್ಲಿ ಸ್ವಯಂಸೇವಕರಾಗಿ ಹೇಗೆ ಕೈಜೋಡಿಸಬಹುದು?",
-      qEn: "How can citizens become active volunteers in our grassroots movement?",
-      aKn: "ಯುವಕರು, ವಿದ್ಯಾರ್ಥಿಗಳು ಮತ್ತು ಕೃಷಿ ಉತ್ಸಾಹಿಗಳು ನಮ್ಮ ಸ್ವಯಂಸೇವಕ ತಂಡವನ್ನು ಸೇರಬಹುದು. ಆರೋಗ್ಯ ಶಿಬಿರಗಳು, ರೈತ ಸಂಪರ್ಕ ಅಭಿಯಾನಗಳು ಮತ್ತು ಗ್ರಾಮ ಮಟ್ಟದ ಶೈಕ್ಷಣಿಕ ಕಾರ್ಯಕ್ರಮಗಳಲ್ಲಿ ಭಾಗವಹಿಸಲು 'Contact' ಪುಟದಲ್ಲಿ ನೊಂದಾಯಿಸಿ.",
-      aEn: "Youth and community members can register via our portal to volunteer for village health camps, farmer outreach drives, and educational mentorship programs.",
+      qKn: "ಶ್ರೀ ಹರ್ಷಾನಂದ ಗುತ್ತೇದಾರ ಅವರ ಜನಸೇವಾ ಆಂದೋಲನದಲ್ಲಿ ಅಧಿಕೃತ ಸದಸ್ಯತ್ವ ಹೇಗೆ ಪಡೆಯುವುದು?",
+      qEn: "How can citizens get official membership in our grassroots movement?",
+      aKn: "ಯುವಕರು, ರೈತರು ಮತ್ತು ನಾಗರಿಕರು ನಮ್ಮ 'ಸದಸ್ಯತ್ವ ನೋಂದಣಿ ಫಾರ್ಮ್' (Membership Registration Form) ಭರ್ತಿ ಮಾಡುವ ಮೂಲಕ ಅಧಿಕೃತ ಡಿಜಿಟಲ್ ಸದಸ್ಯತ್ವ ಪಡೆಯಬಹುದು. ಆರೋಗ್ಯ ಶಿಬಿರಗಳು, ರೈತ ಸಂಪರ್ಕ ಸಭೆಗಳು ಮತ್ತು ಗ್ರಾಮ ಮಟ್ಟದ ಅಭಿವೃದ್ಧಿ ಕಾಮಗಾರಿಗಳಲ್ಲಿ ನೇರವಾಗಿ ಕೈಜೋಡಿಸಬಹುದು.",
+      aEn: "Youth, farmers, and citizens can register via our Membership Registration Form to receive an official digital membership card and actively participate in health camps, farmer outreach drives, and local development projects.",
     },
     {
       id: "q6",

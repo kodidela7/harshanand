@@ -20,6 +20,8 @@ import {
 export default function ContactPage() {
   const { language } = useLanguage();
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -28,18 +30,39 @@ export default function ContactPage() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (formData.name && (formData.email || formData.phone)) {
-      setSubmitted(true);
-      setTimeout(() => setSubmitted(false), 5000);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        location: "Aland, Kalaburagi",
-        message: "",
+    if (!formData.name || !formData.phone || !formData.message) return;
+    setSubmitting(true);
+    setErrorMessage("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...formData,
+          source: "contact_page",
+        }),
       });
+      const data = await res.json();
+      if (data.success) {
+        setSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          location: "Aland, Kalaburagi",
+          message: "",
+        });
+      } else {
+        setErrorMessage(data.message || "Failed to submit message.");
+      }
+    } catch (err) {
+      console.error("Error submitting contact form:", err);
+      setErrorMessage("Network error. Please try again.");
+    } finally {
+      setSubmitting(false);
     }
   };
 

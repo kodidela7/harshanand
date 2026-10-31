@@ -50,12 +50,12 @@ export default function FAQSection() {
       aEn: "Citizens can submit civic concerns directly via our online portal or by calling our Kalaburagi helpline. Every petition is digitally tracked and scheduled for direct consultation.",
     },
     {
-      id: "volunteer",
+      id: "membership",
       num: "04",
-      qKn: "ಯುವಜನರು ಸ್ವಯಂಸೇವಕರಾಗಿ ಚಳವಳಿಯಲ್ಲಿ ಹೇಗೆ ಭಾಗವಹಿಸಬಹುದು?",
-      qEn: "How can youth and volunteers get involved?",
-      aKn: "ಗ್ರಾಮೀಣ ಕೌಶಲ್ಯ ಕಾರ್ಯಾಗಾರಗಳು, ಉಚಿತ ಆರೋಗ್ಯ ಶಿಬಿರಗಳು, ರೈತ ಸಂಪರ್ಕ ಸಭೆಗಳು ಹಾಗೂ ಸಮಾಜಸೇವಾ ಕಾರ್ಯಕ್ರಮಗಳಲ್ಲಿ ಯುವಕರು ನಮ್ಮ ತಂಡದೊಂದಿಗೆ ಸ್ವಯಂಸೇವಕರಾಗಿ ಸೇರಬಹುದು.",
-      aEn: "Youth can join our grassroots field teams participating in community medical camps, farmer advisory workshops, and digital education mentorship programs across Kalaburagi villages.",
+      qKn: "ಸದಸ್ಯತ್ವ ನೋಂದಣಿ ಮಾಡಿಕೊಂಡು ಆಳಂದದ ಪ್ರಗತಿಯಲ್ಲಿ ಹೇಗೆ ಭಾಗವಹಿಸಬಹುದು?",
+      qEn: "How can citizens get official membership and get involved?",
+      aKn: "ನಮ್ಮ ಜಾಲತಾಣದಲ್ಲಿ ಸದಸ್ಯತ್ವ ನೋಂದಣಿ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡುವ ಮೂಲಕ ಜನಸೇವಾ ಚಟುವಟಿಕೆಗಳು, ಯುವಜನರ ಕಾರ್ಯಕ್ರಮಗಳು, ರೈತ ಸಂಪರ್ಕ ಸಭೆಗಳು ಹಾಗೂ ಸಮಾಜಸೇವಾ ಯೋಜನೆಗಳಲ್ಲಿ ನೇರವಾಗಿ ಕೈಜೋಡಿಸಬಹುದು.",
+      aEn: "Citizens can register through our online Membership Registration Form to join hands in public service activities, youth development programs, farmer advisory forums, and local community leadership across Aland & Kalaburagi.",
     },
     {
       id: "updates",

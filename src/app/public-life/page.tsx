@@ -178,17 +178,17 @@ export default function PublicLifePage() {
           <div className="p-8 sm:p-10 rounded-3xl bg-slate-900 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
             <div className="space-y-1 text-center sm:text-left">
               <h4 className="text-xl font-extrabold tracking-tight">
-                {language === "kn" ? "ಸಾರ್ವಜನಿಕ ಸೇವೆಯಲ್ಲಿ ಕೈಜೋಡಿಸಲು ಬಯಸುವಿರಾ?" : "Want to get involved in our public movement?"}
+                {language === "kn" ? "ಆಳಂದದ ಪ್ರಗತಿಯಲ್ಲಿ ಕೈಜೋಡಿಸಲು ಬಯಸುವಿರಾ?" : "Want to get involved in Aland's progress?"}
               </h4>
               <p className="text-xs text-slate-300">
-                {language === "kn" ? "ನಮ್ಮ ಸಮುದಾಯ ತಂಡಗಳಲ್ಲಿ ಸ್ವಯಂಸೇವಕರಾಗಿ ನೋಂದಾಯಿಸಿಕೊಳ್ಳಿ." : "Join our volunteer teams working across Kalaburagi."}
+                {language === "kn" ? "ಅಧಿಕೃತ ಸದಸ್ಯತ್ವ ನೋಂದಣಿ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ ನಮ್ಮೊಂದಿಗೆ ಸೇರಿ." : "Register for official citizen membership and join our movement."}
               </p>
             </div>
             <Link
-              href="/contact"
+              href="/membership"
               className="px-6 py-3 rounded-full bg-[#b91c1c] hover:bg-[#991b1b] text-white font-bold text-xs sm:text-sm shadow-md transition-all shrink-0 inline-flex items-center gap-2"
             >
-              <span>{language === "kn" ? "ಸ್ವಯಂಸೇವಕರಾಗಿ" : "Volunteer Now"}</span>
+              <span>{language === "kn" ? "ಸದಸ್ಯತ್ವ ಪಡೆಯಿರಿ" : "Get Membership"}</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
